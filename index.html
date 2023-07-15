@@ -15,7 +15,6 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      align-items: center;
     }
 
     .video-container video {
@@ -40,6 +39,29 @@
       text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
     }
 
+    .category-container {
+      text-align: center;
+      align-items: center; /* Added to center the icons vertically */
+    }
+
+    .category-container h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      text-decoration: underline;
+    }
+
+    .category-container .icon-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .category-container .icon-container img {
+      margin: 10px;
+      width: 50px; /* Adjust the width as needed */
+      height: 50px; /* Adjust the height as needed */
+      cursor: pointer;
+    }
+
     @media (max-width: 800px) {
       .video-container {
         justify-content: center;
@@ -62,7 +84,7 @@
     <h1>Welcome to My Portfolio</h1>
   </div>
   
-  <div>
+  <div class="category-container">
     <h2>Real Life</h2>
     <div class="video-container">
       <video controls>
@@ -77,7 +99,7 @@
     </div>
   </div>
   
-  <div>
+  <div class="category-container">
     <h2>Games (Montage)</h2>
     <div class="video-container">
       <div class="video-player">
@@ -95,7 +117,7 @@
     </div>
   </div>
 
-  <div>
+  <div class="category-container">
     <h2>Blender</h2>
     <div class="video-container">
       <div class="video-player">
@@ -104,7 +126,19 @@
     </div>
   </div>
   
-  <!-- Add more video categories and videos as needed -->
+  <div class="category-container">
+    <h2>New Category</h2>
+    <div class="icon-container">
+      <img src="discord.png" onclick="openLink('https://discordapp.com/users/283254304025083904')" alt="Image 1">
+      <img src="twitter.png" onclick="openLink('https://twitter.com/SnamProd')" alt="Image 2">
+      <img src="instagram.png" onclick="openLink('https://instagram.com/nikos.nikolopoulos.02?igshid=ZGUzMzM3NWJiOQ==')" alt="Image 3">
+    </div>
+  </div>
   
+  <script>
+    function openLink(link) {
+      window.open(link);
+    }
+  </script>
 </body>
 </html>
