@@ -5,12 +5,12 @@
   <link rel="icon" href="logo.ico" type="image/x-icon">
   <style>
     body {
-      background-image: url("https://rare-gallery.com/thumbs/198284-yuno-gasai-1920x1080.jpg");
+      background-image: url("https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=1380&t=st=1689586614~exp=1689587214~hmac=e498021448ba7bd2d02b8f7e24c29f7c848d2ed4cf846ed6b621351a52fbe6ad");
       background-size: cover;
       background-position: center;
       font-family: "Courier New", monospace;
     }
-    
+
     .video-container {
       display: flex;
       flex-wrap: wrap;
@@ -48,11 +48,24 @@
       font-size: 35px;
       margin-bottom: 20px;
       text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+      font-family: Arial, sans-serif; /* Set the font to Arial */
     }
 
     .category-container .icon-container {
       display: flex;
       justify-content: center;
+    }
+
+    .image-container {
+      display: flex; /* Display images side by side */
+      justify-content: center; /* Center the images horizontally */
+      align-items: center; /* Center the images vertically */
+    }
+
+    .image-container img {
+      width: 200px; /* Adjust the width as needed */
+      height: auto; /* Preserve the aspect ratio */
+      margin-right: 10px; /* Add some spacing between the images */
     }
 
     .category-container .icon-container img {
@@ -104,7 +117,28 @@
   <div class="title-container">
     <h1>Welcome to My Portfolio</h1>
   </div>
+
+  <div class="category-container">
+    <h2>About Me</h2>
+    <div class="image-container">
+      <img src="me.jpg" alt="Image 1">
+      <img src="me2.png" alt="Image 2">
+    </div>
+    <div>
+      <div id="custom-text" style="font-family: Arial, sans-serif; text-align: left; padding: 0 135px; border: 1px solid #000;">
+        <p>Greetings,</p>
+        <p>I am Nik, a highly skilled and experienced 21-year-old professional video editor based in Greece. With a passion for editing that dates back to 2015, I have honed my craft over the years to deliver exceptional results to my clients.</p>
+        <p>Proficient in industry-standard software such as Vegas Pro and After Effects, I have an extensive background in creating captivating visual content. While I am also well-versed in Premiere Pro, I have developed a strong preference for Vegas Pro due to its versatility and efficiency in my workflow.</p>
+        <p>I take great pride in my ability to efficiently close every deal, ensuring that projects are completed promptly and with the utmost attention to detail. I strive for excellence in every aspect of my work, consistently delivering high-quality videos that exceed client expectations.</p>
+        <p>Whether it's editing promotional videos, cinematic masterpieces, or engaging social media content, I bring creativity, technical expertise, and a keen eye for visual storytelling to every project I undertake.</p>
+        <p>Thank you sincerely for dedicating your time to consider my profile.</p>
+        <p>Best regards,</p>
+        <p>Nik</p>
+      </div>
+    </div>
+  </div>
   
+
   <div class="category-container">
     <h2>Real Life</h2>
     <div class="video-container">
@@ -122,7 +156,7 @@
       </div>
     </div>
   </div>
-  
+
   <div class="category-container">
     <h2>Games (Montage)</h2>
     <div class="video-container">
@@ -149,7 +183,7 @@
       </div>
     </div>
   </div>
-  
+
   <div class="category-container">
     <h2>Contact Me</h2>
     <div class="icon-container">
@@ -158,7 +192,7 @@
       <img src="instagram.png" onclick="openLink('https://instagram.com/nikos.nikolopoulos.02?igshid=ZGUzMzM3NWJiOQ==')" alt="Image 3">
     </div>
   </div>
-  
+
   <script>
     function openLink(link) {
       window.open(link);
